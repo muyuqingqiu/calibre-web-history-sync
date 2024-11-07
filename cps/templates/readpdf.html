@@ -77,11 +77,11 @@ See https://github.com/adobe-type-tools/cmap-resources
                     bookHistory.historyKey,
                     JSON.stringify(pdfHistory)
                 )
-                const lastState = window.history.state
+                const lastState = window.history.state || {}
                 const newState = {
                     ...lastState,
                     destination: bookHistory.destination,
-                    uid: lastState.uid + 1
+                    uid: (lastState.uid || 0) + 1
                 }
                 window.history.pushState(newState, '', undefined)
             }
