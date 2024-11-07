@@ -1,0 +1,30 @@
+.DS_Store
+node_modules
+/dist*
+/__pycache__*
+/base-bundle*
+/map-bundle*
+/.history
+/test*
+# local env files
+.env.local
+.env.*.local
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+npminstall-debug.log
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.pyc
